@@ -3,12 +3,12 @@
 Использовать локальные переменные.
 '''
 
-while True:
-    try:
+def otdo(ot, do):
+
         x = 0
-        for i in range(1, 61):
+        for i in range(ot, do):
             print(i)
             x +=i
         print(x)
-        break
-    except ValueError: print('error')
+
+otdo(1,61)

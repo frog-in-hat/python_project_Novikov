@@ -6,15 +6,19 @@
 арифметическое и среднее геометрическое для пар (A, B), (A, C), (A, D), если даны
 A, B, C, D.
 '''
-while True:
-    try:
-        def Mean(X, Y):
-            AMean = (X+Y)/2
-            GMean = Y/X
-            print(str(AMean) + '   ' + str(GMean))
-        Mean(10, 5)
-        Mean(10, 88)
-        Mean(10, 90)
-        break
 
-    except ValueError: print('Error')
+
+def Mean(X, Y):
+
+ AMean = (X+Y)/2
+ GMean = Y/X
+ return AMean, GMean
+res = Mean(10, 5)
+print(res)
+res2 =Mean(10, 88)
+print(res2)
+res3=Mean(10, 90)
+print(res3)
+
+
+
