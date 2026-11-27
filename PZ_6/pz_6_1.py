@@ -6,16 +6,18 @@
 '''
 import random
 while True:
-    n = int(input('Введите число N'))
-    k = int(input('Введите число K'))
-    l = int(input('Введите число L'))
+    n = int(input('Введите число N(Кол-во в списке):'))
+    k = int(input('Введите число K(1 число которое надо исключить):'))
+    l = int(input('Введите число L(2 число котоое надо исключить):'))
     spisok = []
     zxc = 0
+    cv = 0
     for i in range(1, n+1):
      a= random.randint(1,11)
      spisok.append(a)
-     if a != k or l:
+     if a != k and a !=l:
       zxc +=a
+      cv +=1
     print(spisok)
-    print(zxc/n)
+    print(zxc/cv)
     break
